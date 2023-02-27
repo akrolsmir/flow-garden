@@ -1,12 +1,14 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import { useState } from 'react'
+import { Playground } from '@/components/playground'
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
-    <main>
-      <h1 className="text-xl text-red-500">Hello world</h1>
+    <main className="p-8">
+      <Playground />
     </main>
   )
 }
